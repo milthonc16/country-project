@@ -1,0 +1,87 @@
+/* Challenge 7: Make the font for all elements Arial */
+
+/* Challenge 8: Remove the underline for all hyperlinks */
+
+/* Challenge 9: Change the background color to black and the text to white for elements with an id of "banner" */
+
+/* Challenge Bonus: Complete the other web pages, html.html, css.html and js.html */
+*{
+	margin: 0;
+	font-family: "Segoe UI";
+}
+
+body {
+	background-color: var(--emerald-50);
+}
+
+:root {
+	--primary: #22c55e;
+	--priLight: #6ee7b7;
+	--blackPri: #14532d;
+	--yellow: #fde047;
+	--emerald-50: hsl(151.8 81% 95.9%);
+  --emerald-100: hsl(149.3 80.4% 90%);
+  --emerald-200: hsl(152.4 76% 80.4%);
+  --emerald-300: hsl(156.2 71.6% 66.9%);
+  --emerald-400: hsl(158.1 64.4% 51.6%);
+  --emerald-500: hsl(160.1 84.1% 39.4%);
+  --emerald-600: hsl(161.4 93.5% 30.4%);
+  --emerald-700: hsl(162.9 93.5% 24.3%);
+  --emerald-800: hsl(163.1 88.1% 19.8%);
+  --emerald-900: hsl(164.2 85.7% 16.5%);
+  --emerald-950: hsl(165.7 91.3% 9%);
+}
+nav{
+  padding:5px;
+  display: flex;
+	border: var(--emerald-700) 2px solid;
+	margin: 1rem;
+	border-radius: 5px;
+	background-color:var(--emerald-600);
+	justify-content: space-evenly;
+	gap: 0.5rem;
+	
+}
+nav a{
+  color:black;
+  text-decoration: none;
+  text-align:center;
+  background-color:var(--emerald-300);
+  border-radius: 5px;
+  padding: 5px;
+  flex: 1;
+  transition-duration: 0.1s;
+}
+
+nav a:hover {
+	flex-grow: 2;
+	background-color: var(--emerald-400);
+}
+
+#banner {
+	border: var(--emerald-700) 2px solid;
+	background-color: var(--emerald-600);
+	color: var(--yellow);
+	
+	
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#main {
+	background: var(--emerald-100);
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 5px;
+	border: 1px solid var(--emerald-200);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#main img { 
+	width: 25vw;
+	border-radius: 5px;
+};
